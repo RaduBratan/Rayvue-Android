@@ -67,6 +67,7 @@ class GamesService @Inject constructor(
                 "displayName",
                 "icon",
             ),
+            orderBy = "displayName",
             limit = limit,
             startAfter = startAfter
         )
@@ -129,6 +130,25 @@ class GamesService @Inject constructor(
             limit = limit,
             orderBy = dateType,
             direction = Query.Direction.DESCENDING,
+            startAfter = startAfter
+        )
+    }
+
+    suspend fun fetchJournalGames(
+        gameIds: List<String>,
+        limit: Long,
+        startAfter: DocumentSnapshot? = null
+    ): Pair<List<Game>, DocumentSnapshot?> {
+        return firebaseStorageService.getDocumentsRepeatedly(
+            collectionId = "games",
+            documentFields = arrayOf(
+                "id",
+                "displayName",
+                "icon",
+                "banner",
+            ),
+            ids = gameIds,
+            limit = limit,
             startAfter = startAfter
         )
     }

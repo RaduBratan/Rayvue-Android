@@ -15,7 +15,7 @@
     <string name="nav_journal_title">Jurnal</string>
 
     <!-- Account Screen -->
-    <string name="account_prompt_message">Creează un cont gratis pentru a salva recenziile tale în cloud.</string>
+    <string name="account_prompt_message">Creează un cont gratis pentru a salva datele tale în cloud.</string>
     <string name="account_button_login_title">Intră în cont</string>
     <string name="account_button_signup_title">Creează un cont nou</string>
     <string name="account_button_no_account_title">Continuă fără un cont</string>
@@ -27,7 +27,7 @@
     <string name="login_email_support">Va trebui să ți-o amintești</string>
     <string name="login_email_error">Contul cu acest email nu există</string>
     <string name="login_password_hint">Parola ta</string>
-    <string name="login_password_support">Dacă ai uitat-o, cere o resetare</string>
+    <string name="login_password_support">Nu poți cere resetarea acesteia momentan</string>
     <string name="login_password_error">Parolă greșită</string>
     <string name="login_button_title">Intră în cont</string>
 
@@ -38,7 +38,7 @@
     <string name="signup_email_support">Emailul trebuie sa fie corect și complet</string>
     <string name="signup_email_error">Emailul aparține unui cont existent</string>
     <string name="signup_password_hint">Parolă</string>
-    <string name="signup_password_support">Minim 10 caractere</string>
+    <string name="signup_password_support">Minim 10 caractere inclusiv o majusculă și o cifră</string>
     <string name="signup_button_title">Următorul</string>
 
     <!-- Input Name Screen -->
@@ -62,7 +62,16 @@
     <string name="awards_section_past_title">Premii din trecut</string>
 
     <!-- Journal Screen -->
-    <string name="journal_empty_data_error_message">You haven\'t added any games to your journal.</string>
+    <string name="journal_get_data_error_message">Nu ai adăugat jocuri în jurnalul tău.</string>
+
+    <!-- Entry Screen -->
+    <string name="entry_title">Jurnal</string>
+    <string name="entry_select_placeholder">Selectează un joc</string>
+    <string name="entry_write_hint">Scrie ceva în jurnalul tău…</string>
+    <string name="entry_button_save_title">Salvează</string>
+    <string name="entry_send_data_error_message">A apărut o eroare. Ce ai scris în jurnal nu a putut fi trimis către server. Datele au fost salvate doar local.</string>
+    <string name="entry_send_data_success_message">Datele din jurnal au fost salvate.</string>
+    <string name="entry_replace_confirm_message">Ai adăugat deja date în jurnal pentru acest joc. Vrei să le înlocuiești?</string>
 
     <!-- Search Screen -->
     <string name="search_general_placeholder">Introdu căutarea ta</string>
@@ -73,6 +82,7 @@
     <string name="game_details_get_data_error_message">A apărut o eroare. Detaliile pentru acest joc nu au putut fi încărcate.</string>
     <string name="game_details_empty_data_error_message">Nu au fost găsite recenzii pentru acest joc. Adaugă tu unul.</string>
     <string name="game_details_section_reviews_title">Recenzii</string>
+    <string name="game_details_section_categories_title">Categorii</string>
     <string name="game_details_section_keep_in_mind_title">De reținut</string>
     <string name="game_details_tag_price_symbol">\$%1$s</string>
     <string name="game_details_tag_price_free">Gratis</string>
